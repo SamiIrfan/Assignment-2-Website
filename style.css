@@ -1,6 +1,199 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Georgia, serif;
+}
+
 body{
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
+background:#cbb88c;
+color:#4a3526;
+}
+
+/* HEADER */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+}
+
+.logo h1{
+color:#1f6b3d;
+font-size:38px;
+line-height:1.1;
+}
+
+nav{
+display:flex;
+align-items:center;
+}
+
+.nav-links{
+display:flex;
+list-style:none;
+gap:35px;
+}
+
+.nav-links a:hover{
+color:#095d2a;
+}
+
+.nav-links a{
+text-decoration:none;
+color:#5a3a2d;
+font-size:20px;
+}
+
+.nav-links a.active{
+text-decoration:underline;
+font-weight:bold;
+}
+
+/* HERO */
+
+.hero{
+text-align:center;
+padding:120px 20px;
+background:#c7d1a6;
+background-image: url(websitebackground.png);
+background-size: cover;
+}
+
+.hero h1{
+font-size:90px;
+margin-top:10px;
+}
+
+.hero h2{
+font-size:60px;
+}
+
+.underline{
+text-decoration:underline;
+margin-bottom:40px;
+}
+
+/* ABOUT TEXT */
+
+.about-text{
+max-width:1000px;
+margin:auto;
+font-size:28px;
+line-height:1.5;
+}
+
+/* TIPS */
+
+.tips-container{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:25px;
+flex-wrap:wrap;
+margin-top:40px;
+}
+
+.tip-box{
+background:#7d8f5a;
+padding:20px;
+border-radius:10px;
+border:6px solid black;
+width:230px;
+height: 210px;
+}
+
+.tip-box h3{
+text-align:center;
+text-decoration:underline;
+margin-bottom:10px;
+}
+
+.tip-image{
+width:230px;
+height: 210px;
+border:6px solid black;
+border-radius:10px;
+}
+
+.tip-video{
+width:240px;
+height:150px;
+border:6px solid black;
+border-radius:10px;
+}
+
+/* FOOTER */
+
+footer{
+background:#cbb88c;
+padding:30px 60px;
+height: 100px;
+}
+
+footer h3{
+color:#1f6b3d;
+text-decoration:underline;
+margin-bottom:20px;
+}
+
+.footer-content{
+display:flex;
+justify-content:space-between;
+font-size:20px;
+height: 100px;
+}
+
+/* BURGER MENU */
+
+.burger{
+display:none;
+flex-direction:column;
+cursor:pointer;
+gap:5px;
+}
+
+.burger span{
+width:25px;
+height:3px;
+background:#333;
+}
+
+/* MOBILE */
+
+@media (max-width:900px){
+
+.nav-links{
+position:absolute;
+top:90px;
+right:0;
+background:#cbb88c;
+flex-direction:column;
+width:200px;
+padding:20px;
+display:none;
+}
+
+.nav-links.show{
+display:flex;
+}
+
+.burger{
+display:flex;
+}
+
+.footer-content{
+flex-direction:column;
+gap:10px;
+}
+
+.hero h1{
+font-size:60px;
+}
+
+.hero h2{
+font-size:40px;
+}
+
 }
