@@ -59,6 +59,7 @@ padding:120px 20px;
 background:#c7d1a6;
 background-image: url(websitebackground.png);
 background-size: cover;
+height: 800px;
 }
 
 .hero h1{
@@ -68,6 +69,14 @@ margin-top:10px;
 
 .hero h2{
 font-size:60px;
+}
+
+.hero h3{
+font-size:30px;
+}
+
+.hero li{
+font-size:20px;
 }
 
 .underline{
@@ -93,6 +102,17 @@ align-items:center;
 gap:25px;
 flex-wrap:wrap;
 margin-top:40px;
+overflow-x: scroll;
+padding: 10px;
+}
+
+.newsletter-container{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:25px;
+flex-wrap:wrap;
+margin-top:40px;
 }
 
 .tip-box{
@@ -100,8 +120,22 @@ background:#7d8f5a;
 padding:20px;
 border-radius:10px;
 border:6px solid black;
-width:230px;
-height: 210px;
+width:300px;
+height: 300px;
+}
+
+.tip-box ul{
+list-style: none;
+}
+
+.newsletter-box{
+display: flex;
+background:#7d8f5a;
+padding:20px;
+border-radius:10px;
+border:6px solid black;
+width:2000px;
+height: 420px;
 }
 
 .tip-box h3{
@@ -110,18 +144,31 @@ text-decoration:underline;
 margin-bottom:10px;
 }
 
+.tip-box p{
+font-size:18px;
+}
+
+
+.newsletter-box h3{
+text-align:center;
+text-decoration:underline;
+margin-bottom:1px;
+}
+
+
 .tip-image{
-width:230px;
-height: 210px;
+width:300px;
+height: 300px;
 border:6px solid black;
 border-radius:10px;
 }
 
 .tip-video{
-width:240px;
-height:150px;
+width:300px;
+height:300px;
 border:6px solid black;
 border-radius:10px;
+object-fit: cover;
 }
 
 /* FOOTER */
@@ -130,6 +177,10 @@ footer{
 background:#cbb88c;
 padding:30px 60px;
 height: 100px;
+position: fixed;
+bottom: 0;
+left: 0;
+right: 0;
 }
 
 footer h3{
@@ -162,7 +213,7 @@ background:#333;
 
 /* MOBILE */
 
-@media (max-width:900px){
+@media (max-width:1200px){
 
 .nav-links{
 position:absolute;
@@ -184,8 +235,8 @@ display:flex;
 }
 
 .footer-content{
-flex-direction:column;
 gap:10px;
+font-size: 18px;
 }
 
 .hero h1{
