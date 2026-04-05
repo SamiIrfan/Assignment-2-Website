@@ -350,9 +350,9 @@ input:checked + .slider:before{
   }
   
   .newsletter-box{
+    height:500px; 
+    display:flex;
     flex-direction:column;
-    height:auto;
-    width:100%;
   }
 
   .newsletter-main img{
@@ -361,8 +361,18 @@ input:checked + .slider:before{
   }
 
   .newsletter-text{
-    padding-left:0;
-    margin-top:15px;
+    overflow-y:auto;
+    max-height:250px;
+    padding-right:10px;
+  }
+
+    .newsletter-text::-webkit-scrollbar{
+    width:5px;
+  }
+
+  .newsletter-text::-webkit-scrollbar-thumb{
+    background:#4a3526;
+    border-radius:10px;
   }
 
   .newsletter-text h3{
@@ -387,6 +397,10 @@ input:checked + .slider:before{
 
   .hero-subtitle{
     font-size:100px;
+  }
+
+  .about-text{
+    font-size:20px;
   }
 
 }
