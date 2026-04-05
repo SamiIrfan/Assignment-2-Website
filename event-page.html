@@ -15,24 +15,38 @@
 <h1>Green<br>Campus</h1>
 </div>
 
-<nav>
-<ul class="nav-links">
+<nav id="nav">
+  <ul class="nav-links">
+    <li><a href="home-page.html">Home</a></li>
+    <li><a href="about-page.html">About Us</a></li>
+    <li><a href="tips-page.html">Sustainability Tips</a></li>
+    <li><a href="event-page.html">Event Listings</a></li>
+    <li><a href="activity-page.html">Weekly Activities</a></li>
+   <li><a href="news-page.html" style="margin-right: 10px;">Newsletter</a></li>
 
-<li><a href="home-page.html">Home</a></li>
-<li><a href="about-page.html">About Us</a></li>
-<li><a href="tips-page.html">Sustainability Tips</a></li>
-<li><a class="active" href="event-page.html">Event Listings</a></li>
-<li><a href="activity-page.html">Weekly Activities</a></li>
-<li><a href="news-page.html">Newsletter</a></li>
+    <!-- MOBILE SETTINGS -->
+    <div class="mobile-settings">
+      <h3>Settings</h3>
+      <label class="switch">
+        <input type="checkbox" id="darkToggleMobile">
+        <span class="slider"></span>
+      </label>
+    </div>
+  </ul>
 
-</ul>
+  <!-- DESKTOP TOGGLE -->
+  <div class="desktop-settings">
+    <label class="switch">
+      <input type="checkbox" id="darkToggle">
+      <span class="slider"></span>
+    </label>
+  </div>
 
-<div class="burger" id="burger">
-<span></span>
-<span></span>
-<span></span>
-</div>
-
+  <div class="burger" id="burger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
 </nav>
 
 </header>
@@ -44,7 +58,7 @@
 <div class="tips-container">
 
 <div class="tip-box">
-<input type="checkbox" style="accent-color: #7d8f5a; background-color: #7d8f5a;">
+<input type="checkbox" id="event1">
 <h3>Event 1</h3>
 <ul>
 <li>Friday 26th Feb 12:30</li>
@@ -55,7 +69,7 @@
 </div>
 
 <div class="tip-box">
-<input type="checkbox" style="accent-color: #7d8f5a; background-color: #7d8f5a;">
+<input type="checkbox" id="event2">
 <h3>Event 2</h3>
 <ul>
 <li>Friday 26th Feb 12:30</li>
@@ -66,7 +80,7 @@
 </div>
 
 <div class="tip-box">
-<input type="checkbox" style="accent-color: #7d8f5a; background-color: #7d8f5a;">
+<input type="checkbox" id="event3">
 <h3>Event 3</h3>
 <ul>
 <li>Friday 26th Feb 12:30</li>
@@ -77,7 +91,7 @@
 </div>
 
 <div class="tip-box">
-<input type="checkbox" style="accent-color: #7d8f5a; background-color: #7d8f5a;">
+<input type="checkbox" id="event4">
 <h3>Event 4</h3>
 <ul>
 <li>Friday 26th Feb 12:30</li>
@@ -88,7 +102,7 @@
 </div>
 
 <div class="tip-box">
-<input type="checkbox" style="accent-color: #7d8f5a; background-color: #7d8f5a;">
+<input type="checkbox" id="event5">
 <h3>Event 5</h3>
 <ul>
 <li>Friday 26th Feb 12:30</li>

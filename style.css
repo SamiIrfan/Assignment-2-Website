@@ -1,250 +1,392 @@
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Georgia, serif;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Georgia, serif;
 }
 
 body{
-background:#cbb88c;
-color:#4a3526;
+  background:#cbb88c;
+  color:#4a3526;
 }
 
-/* HEADER */
-
+/* ================= HEADER ================= */
 header{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 60px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 60px;
 }
 
 .logo h1{
-color:#1f6b3d;
-font-size:38px;
-line-height:1.1;
+  color:#1f6b3d;
+  font-size:38px;
+  line-height:1.1;
 }
 
 nav{
-display:flex;
-align-items:center;
+  display:flex;
+  align-items:center;
 }
 
 .nav-links{
-display:flex;
-list-style:none;
-gap:35px;
-}
-
-.nav-links a:hover{
-color:#095d2a;
+  display:flex;
+  list-style:none;
+  gap:35px;
 }
 
 .nav-links a{
-text-decoration:none;
-color:#5a3a2d;
-font-size:20px;
+  text-decoration:none;
+  color:#5a3a2d;
+  font-size:20px;
+}
+
+.nav-links a:hover{
+  color:#095d2a;
 }
 
 .nav-links a.active{
-text-decoration:underline;
-font-weight:bold;
+  text-decoration:underline;
+  font-weight:bold;
 }
 
-/* HERO */
-
+/* ================= HERO ================= */
 .hero{
-text-align:center;
-padding:120px 20px;
-background:#c7d1a6;
-background-image: url(websitebackground.png);
-background-size: cover;
-height: 800px;
+  text-align:center;
+  padding:120px 20px;
+  background:#c7d1a6;
+  background-image:url(websitebackground.png);
+  background-size:cover;
+  height:800px;
+}
+
+/* ================= HERO TEXT ================= */
+.hero-title{
+  font-size:200px;
+}
+
+.hero-subtitle{
+  font-size:100px;
 }
 
 .hero h1{
-font-size:90px;
-margin-top:10px;
+  font-size:90px;
+  margin-top:10px;
 }
 
 .hero h2{
-font-size:60px;
+  font-size:60px;
 }
 
 .hero h3{
-font-size:30px;
+  font-size:30px;
 }
 
 .hero li{
-font-size:20px;
+  font-size:20px;
 }
 
 .underline{
-text-decoration:underline;
-margin-bottom:40px;
+  text-decoration:underline;
+  margin-bottom:40px;
 }
 
-/* ABOUT TEXT */
-
+/* ================= ABOUT ================= */
 .about-text{
-max-width:1000px;
-margin:auto;
-font-size:28px;
-line-height:1.5;
+  max-width:1000px;
+  margin:auto;
+  font-size:28px;
+  line-height:1.5;
 }
 
-/* TIPS */
-
+/* ================= TIPS / EVENTS / ACTIVITIES ================= */
 .tips-container{
-display:flex;
-justify-content:center;
-align-items:center;
-gap:25px;
-flex-wrap:wrap;
-margin-top:40px;
-overflow-x: scroll;
-padding: 10px;
-}
-
-.newsletter-container{
-display:flex;
-justify-content:center;
-align-items:center;
-gap:25px;
-flex-wrap:wrap;
-margin-top:40px;
+  display:flex;
+  gap:25px;
+  overflow-x:auto;
+  padding:20px;
 }
 
 .tip-box{
-background:#7d8f5a;
-padding:20px;
-border-radius:10px;
-border:6px solid black;
-width:300px;
-height: 300px;
+  background:#7d8f5a;
+  padding:20px;
+  border-radius:10px;
+  border:6px solid black;
+  min-width:300px;
+  height:300px;
+  flex:0 0 auto;
+  transition:0.3s;
+}
+
+.tip-box:hover{
+  transform:scale(1.05);
 }
 
 .tip-box ul{
-list-style: none;
-}
-
-.newsletter-box{
-display: flex;
-background:#7d8f5a;
-padding:20px;
-border-radius:10px;
-border:6px solid black;
-width:2000px;
-height: 420px;
+  list-style:none;
 }
 
 .tip-box h3{
-text-align:center;
-text-decoration:underline;
-margin-bottom:10px;
+  text-align:center;
+  text-decoration:underline;
+  margin-bottom:10px;
 }
 
 .tip-box p{
-font-size:18px;
+  font-size:18px;
 }
 
+/* ================= NEWSLETTER ================= */
+.newsletter-container{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:25px;
+  flex-wrap:wrap;
+  margin-top:40px;
+}
+
+.newsletter-box{
+  display:flex;
+  background:#7d8f5a;
+  padding:20px;
+  border-radius:10px;
+  border:6px solid black;
+  width:100%;
+  max-width:1200px;
+  height:420px;
+}
 
 .newsletter-box h3{
-text-align:center;
-text-decoration:underline;
-margin-bottom:1px;
+  text-align:center;
+  text-decoration:underline;
+  margin-bottom:1px;
 }
 
-
+/* ================= MEDIA ================= */
 .tip-image{
-width:300px;
-height: 300px;
-border:6px solid black;
-border-radius:10px;
+  width:300px;
+  height:300px;
+  border:6px solid black;
+  border-radius:10px;
 }
 
 .tip-video{
-width:300px;
-height:300px;
-border:6px solid black;
-border-radius:10px;
-object-fit: cover;
+  width:300px;
+  height:300px;
+  border:6px solid black;
+  border-radius:10px;
+  object-fit:cover;
 }
 
-/* FOOTER */
-
+/* ================= FOOTER ================= */
 footer{
-background:#cbb88c;
-padding:30px 60px;
-height: 100px;
-position: fixed;
-bottom: 0;
-left: 0;
-right: 0;
+  background:#cbb88c;
+  padding:30px 60px;
+  position:relative;
 }
 
 footer h3{
-color:#1f6b3d;
-text-decoration:underline;
-margin-bottom:20px;
+  color:#1f6b3d;
+  text-decoration:underline;
+  margin-bottom:20px;
 }
 
 .footer-content{
-display:flex;
-justify-content:space-between;
-font-size:20px;
-height: 100px;
+  display:flex;
+  justify-content:space-between;
+  font-size:20px;
 }
 
-/* BURGER MENU */
-
+/* ================= BURGER ================= */
 .burger{
-display:none;
-flex-direction:column;
-cursor:pointer;
-gap:5px;
+  display:none;
+  flex-direction:column;
+  cursor:pointer;
+  gap:5px;
 }
 
 .burger span{
-width:25px;
-height:3px;
-background:#333;
+  width:25px;
+  height:3px;
+  background:#333;
 }
 
-/* MOBILE */
+/* ================= DARK MODE ================= */
+body.dark{
+  background:#1a1a1a;
+  color:#f1f1f1;
+}
 
+body.dark header,
+body.dark footer{
+  background:#222;
+}
+
+body.dark .hero{
+  background-color:#2c2c2c;
+}
+
+body.dark .tip-box,
+body.dark .newsletter-box{
+  background:#3a3a3a;
+  border-color:#f1f1f1;
+}
+
+body.dark a{
+  color:#ddd;
+}
+
+/* DARK MODE - BURGER MENU */
+body.dark .nav-links{
+  background:#222;
+}
+
+body.dark .nav-links a{
+  color:#f1f1f1;
+}
+
+body.dark .nav-links a:hover{
+  color:#90ee90;
+}
+
+body.dark .mobile-settings{
+  border-top:2px solid #aaa;
+}
+
+/* ================= TOGGLE SWITCH ================= */
+.switch{
+  position:relative;
+  display:inline-block;
+  width:50px;
+  height:24px;
+}
+
+.switch input{
+  opacity:0;
+}
+
+.slider{
+  position:absolute;
+  cursor:pointer;
+  background:#ccc;
+  border-radius:34px;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  transition:0.3s;
+}
+
+.slider:before{
+  position:absolute;
+  content:"";
+  height:18px;
+  width:18px;
+  left:3px;
+  bottom:3px;
+  background:white;
+  border-radius:50%;
+  transition:0.3s;
+}
+
+input:checked + .slider{
+  background:#1f6b3d;
+}
+
+input:checked + .slider:before{
+  transform:translateX(26px);
+}
+
+/* ================= MOBILE SETTINGS ================= */
+.mobile-settings{
+  display:none;
+  margin-top:20px;
+  border-top:2px solid #555;
+  padding-top:15px;
+}
+
+/* ================= MOBILE ================= */
 @media (max-width:1200px){
 
-.nav-links{
-position:absolute;
-top:90px;
-right:0;
-background:#cbb88c;
-flex-direction:column;
-width:200px;
-padding:20px;
-display:none;
-}
+  .nav-links{
+    position:absolute;
+    top:90px;
+    right:0;
+    background:#cbb88c;
+    flex-direction:column;
+    width:200px;
+    padding:20px;
+    display:none;
+  }
 
-.nav-links.show{
-display:flex;
-}
+  .nav-links.show{
+    display:flex;
+  }
 
-.burger{
-display:flex;
-}
+  .burger{
+    display:flex;
+  }
 
-.footer-content{
-gap:10px;
-font-size: 18px;
-}
+  .desktop-settings{
+    display:none;
+  }
 
-.hero h1{
-font-size:60px;
-}
+  .mobile-settings{
+    display:block;
+  }
 
-.hero h2{
-font-size:40px;
-}
+  .hero h1{
+    font-size:60px;
+  }
+
+  .hero h2{
+    font-size:40px;
+  }
+
+  .footer-content{
+    font-size:18px;
+    gap:10px;
+  }
+  
+  .newsletter-box{
+    flex-direction:column;
+    height:auto;
+    width:100%;
+  }
+
+  .newsletter-main img{
+    width:100%;
+    height:auto;
+  }
+
+  .newsletter-text{
+    padding-left:0;
+    margin-top:15px;
+  }
+
+  .newsletter-text h3{
+    font-size:16px;
+  }
+
+  .newsletter-text p{
+    font-size:10px;
+    line-height:1.4;
+  }
+
+    .newsletter-main img{
+    width:100%;
+    max-width:400px;
+    margin:auto;
+    display:block;
+  }
+
+  .hero-title{
+    font-size:150px;
+  }
+
+  .hero-subtitle{
+    font-size:100px;
+  }
 
 }
