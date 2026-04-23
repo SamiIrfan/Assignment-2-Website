@@ -42,8 +42,10 @@ function toggleDarkMode() {
 
   if (document.body.classList.contains("dark")) {
     localStorage.setItem("darkMode", "enabled");
+    image.src = 'darkwebsitebackground.png';
   } else {
     localStorage.setItem("darkMode", "disabled");
+    image.src = 'websitebackground.png';
   }
 
   syncToggle();

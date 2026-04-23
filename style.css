@@ -10,6 +10,11 @@ body{
   color:#4a3526;
 }
 
+:root {
+  --bg-image: url("websitebackground.png");
+  --bgdark-image: url("darkwebsitebackground.png");
+}
+
 /* ================= HEADER ================= */
 header{
   display:flex;
@@ -54,9 +59,10 @@ nav{
 .hero{
   text-align:center;
   padding:120px 20px;
-  background:#c7d1a6;
-  background-image:url(websitebackground.png);
+  background-color: #7d8f5a;
+  background-image: var(--bg-image);
   background-size:cover;
+  transition: background-image 0.3s ease;
   height:800px;
 }
 
@@ -216,6 +222,10 @@ footer h3{
 body.dark{
   background:#1a1a1a;
   color:#f1f1f1;
+}
+
+body.dark .hero{
+  background-image: var(--bgdark-image)
 }
 
 body.dark header,
